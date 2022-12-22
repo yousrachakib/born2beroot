@@ -110,11 +110,22 @@ lvm is a device mapper framework that provides logical volume management for the
 ### <a> Verify that the "/var/log/sudo/"folder exist </a>
     sudo cat /var/log/sudo/sudo.log
 ## UFW
+### what is ufw ?
+(Uncomplicated Firewall) is a firewall management tool for Linux systems.allows you to set up rules to control incoming and outgoing traffic on your system. You can use ufw to block or allow traffic based on various criteria, such as the port number, the protocol, or the source or destination IP address. You can also use ufw to log traffic or to rate limit certain types of traffic.
+
 ### <a> Check that the UFW is properly installed </a>
     sudo UFW status 
 ### <a> Add a new Port to ufw </a>
     sudo ufw allow <new_port>
 ## SSH
+### what is ssh ?
+(Secure Shell) is a network protocol used to securely connect to a remote computer. It allows you to remotely access a command-line interface on a remote computer and execute commands, as if you were sitting at the computer's console.
+
+ssh uses encryption to secure the connection between the client and the server, ensuring that the data transmitted over the connection cannot be intercepted or modified by third parties. This makes ssh a secure and reliable way to remotely access a computer, particularly when accessing sensitive information or systems. ssh is commonly used to remotely access and manage servers, but it can also be used to connect to desktop computers and other devices. ssh is available on a wide range of operating systems, including Linux, macOS, and Windows.
+
+To use ssh, you need to have an ssh client installed on your computer, and the remote computer must have an ssh server running. You can then use the ssh command to connect to the remote computer, specifying the user name and the IP address or hostname of the remote computer. For example:
+### example
+    ssh username@remote.example.com
 ### <a> Check that the SSH service is installed </a>
     which ssh
 
